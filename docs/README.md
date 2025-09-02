@@ -1,0 +1,2 @@
+# ClusterBot
+Efficiently group and cluster related discussion threads together. On virtually any subreddit, you will see it flooded with the same posts/news. This fragments discussions and clutters the subreddit from other content. To approach this issue, I decided to create a system that can cluster related threads together, consolidating into a mega thread while perserving discussions.
