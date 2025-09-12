@@ -23,7 +23,7 @@ class Post(Base):
     content = Column(Text)
     url = Column(String)
     author = Column(String)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now(datetime.UTC))
     reddit_created_utc = Column(Float)
     score = Column(Integer, default=0)
     subreddit = Column(String, nullable=False)
@@ -41,8 +41,8 @@ class Cluster(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     representative_post_id = Column(String, ForeignKey("posts.id"))
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now(datetime.UTC))
+    updated_at = Column(DateTime, default=datetime.now(datetime.UTC))
     post_count = Column(Integer, default=1)
     keywords = Column(Text)  # JSON string of important keywords
     title = Column(String)  # Generated cluster title

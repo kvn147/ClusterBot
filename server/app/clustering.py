@@ -280,7 +280,7 @@ class PostClusterer:
 
     def _is_cluster_stale(self, cluster_data: Dict) -> bool:
         """Check if cluster is too old to accept new posts"""
-        cluster_age = datetime.utcnow() - cluster_data["created_at"]
+        cluster_age = datetime.now(datetime.UTC) - cluster_data["created_at"]
         return cluster_age > timedelta(hours=24)
 
     def create_cluster(self, post: Dict) -> int:
@@ -293,7 +293,7 @@ class PostClusterer:
             "representative_post_id": post["id"],
             "representative_post": post,  # Store full post for similarity comparison
             "domain": domain,
-            "created_at": datetime.utcnow(),
+            "created_at": datetime.now(datetime.UTC),
             "post_count": 1,
             "title": post["title"],
         }
