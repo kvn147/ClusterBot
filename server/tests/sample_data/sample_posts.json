@@ -1,0 +1,166 @@
+{
+  "earthquake_cluster": [
+    {
+      "id": "test_eq1",
+      "title": "Breaking: Major 7.2 earthquake hits Japan, tsunami warning issued",
+      "selftext": "A powerful earthquake struck off the coast of Japan at approximately 2:30 PM local time. The Japan Meteorological Agency has issued tsunami warnings for coastal areas. Buildings in Tokyo swayed for several minutes as the tremor was felt across the region.",
+      "url": "https://cnn.com/2024/03/15/earthquake-japan-123",
+      "author": "NewsReporter1",
+      "created_utc": 1700000000,
+      "score": 1540,
+      "subreddit": "worldnews",
+      "num_comments": 234
+    },
+    {
+      "id": "test_eq2",
+      "title": "Japan earthquake: 7.2 magnitude quake causes widespread damage",
+      "selftext": "The earthquake, centered 50km off the coast of Honshu, has caused significant infrastructure damage. Power outages reported in several prefectures. Emergency services are assessing the full extent of the damage.",
+      "url": "https://bbc.com/news/japan-earthquake-456",
+      "author": "BBCNews",
+      "created_utc": 1700000300,
+      "score": 987,
+      "subreddit": "worldnews", 
+      "num_comments": 156
+    },
+    {
+      "id": "test_eq3",
+      "title": "Tsunami warning after powerful Japan earthquake leaves thousands without power",
+      "selftext": "",
+      "url": "https://reuters.com/world/japan-tsunami-789",
+      "author": "ReutersBot",
+      "created_utc": 1700000600,
+      "score": 2100,
+      "subreddit": "news",
+      "num_comments": 445
+    },
+    {
+      "id": "test_eq4",
+      "title": "LIVE UPDATES: 7.2 earthquake Japan - buildings damaged, power outages reported",
+      "selftext": "Live coverage of the major earthquake that struck Japan. Updates on damage assessment, evacuation procedures, and emergency response efforts.",
+      "url": "https://cbsnews.com/live/japan-earthquake-updates",
+      "author": "CBSNewsLive",
+      "created_utc": 1700000900,
+      "score": 892,
+      "subreddit": "worldnews",
+      "num_comments": 167
+    }
+  ],
+  "tech_cluster": [
+    {
+      "id": "test_tech1",
+      "title": "OpenAI releases GPT-5 with groundbreaking multimodal capabilities",
+      "selftext": "The new model shows significant improvements in reasoning, coding, and image understanding. GPT-5 can now process video, audio, and text simultaneously with unprecedented accuracy.",
+      "url": "https://techcrunch.com/2024/gpt5-release-openai",
+      "author": "TechWriter",
+      "created_utc": 1700001000,
+      "score": 5670,
+      "subreddit": "technology",
+      "num_comments": 892
+    },
+    {
+      "id": "test_tech2", 
+      "title": "GPT-5 announced by OpenAI: What developers need to know about the new AI model",
+      "selftext": "Key features include improved coding capabilities, better reasoning, reduced hallucinations, and native multimodal processing. API access will be available next month.",
+      "url": "https://arstechnica.com/ai/gpt5-developer-analysis",
+      "author": "AIExpert",
+      "created_utc": 1700001200,
+      "score": 3420,
+      "subreddit": "technology",
+      "num_comments": 567
+    },
+    {
+      "id": "test_tech3",
+      "title": "OpenAI's GPT-5: A leap forward in artificial intelligence capabilities",
+      "selftext": "The latest AI model from OpenAI represents a significant advancement in machine learning technology, with applications spanning from software development to scientific research.",
+      "url": "https://venturebeat.com/ai/openai-gpt5-launch-analysis",
+      "author": "VentureBeatAI",
+      "created_utc": 1700001500,
+      "score": 2891,
+      "subreddit": "MachineLearning",
+      "num_comments": 334
+    }
+  ],
+  "climate_cluster": [
+    {
+      "id": "test_climate1",
+      "title": "Antarctica ice sheet melting accelerates, sea levels could rise 2 feet by 2100",
+      "selftext": "New research from Antarctic monitoring stations shows ice loss has tripled in the past decade. Scientists warn of irreversible tipping points.",
+      "url": "https://nature.com/articles/antarctica-ice-melt-study-2024",
+      "author": "ClimateScientist",
+      "created_utc": 1700002000,
+      "score": 1876,
+      "subreddit": "science",
+      "num_comments": 421
+    },
+    {
+      "id": "test_climate2",
+      "title": "Study: Antarctic ice melting faster than predicted, threatens coastal cities worldwide",
+      "selftext": "Satellite data reveals accelerated ice sheet collapse. Coastal cities from Miami to Mumbai face unprecedented flooding risks within decades.",
+      "url": "https://washingtonpost.com/climate/antarctica-ice-melt-cities-risk",
+      "author": "ClimateReporter",
+      "created_utc": 1700002300,
+      "score": 1234,
+      "subreddit": "climate",
+      "num_comments": 289
+    }
+  ],
+  "unrelated": [
+    {
+      "id": "test_unrel1",
+      "title": "New species of butterfly discovered in Amazon rainforest shows unique wing patterns",
+      "selftext": "Scientists have identified a previously unknown butterfly species with iridescent blue wings. The discovery was made during a biodiversity survey in the Brazilian Amazon.",
+      "url": "https://nature.com/articles/butterfly-discovery-amazon-2024",
+      "author": "ScienceDaily",
+      "created_utc": 1700003000,
+      "score": 234,
+      "subreddit": "science",
+      "num_comments": 45
+    },
+    {
+      "id": "test_unrel2",
+      "title": "Local bakery wins international award for sourdough bread recipe",
+      "selftext": "A small bakery in Portland, Oregon has won the World Bread Awards for their innovative sourdough technique. The secret involves a 200-year-old starter.",
+      "url": "https://foodnetwork.com/news/portland-bakery-award",
+      "author": "FoodieNews",
+      "created_utc": 1700003300,
+      "score": 156,
+      "subreddit": "food",
+      "num_comments": 78
+    },
+    {
+      "id": "test_unrel3",
+      "title": "SpaceX launches new batch of Starlink satellites, bringing total to over 5,000",
+      "selftext": "The latest Falcon 9 mission successfully deployed 23 Starlink satellites into orbit. The constellation now provides internet coverage to over 60 countries.",
+      "url": "https://spacenews.com/spacex-starlink-launch-march-2024",
+      "author": "SpaceReporter",
+      "created_utc": 1700003600,
+      "score": 987,
+      "subreddit": "space",
+      "num_comments": 234
+    }
+  ],
+  "duplicate_urls": [
+    {
+      "id": "test_dup1",
+      "title": "Tesla announces new Model Y refresh with improved range",
+      "selftext": "Tesla has unveiled updates to the Model Y with enhanced battery technology and aerodynamic improvements.",
+      "url": "https://electrek.co/tesla-model-y-refresh-2024",
+      "author": "ElectricCarNews",
+      "created_utc": 1700004000,
+      "score": 456,
+      "subreddit": "teslamotors",
+      "num_comments": 123
+    },
+    {
+      "id": "test_dup2",
+      "title": "Tesla Model Y gets major update: longer range, new features revealed",
+      "selftext": "The electric vehicle manufacturer has announced significant improvements to their popular SUV model, including extended driving range and updated interior features.",
+      "url": "https://electrek.co/tesla-model-y-refresh-2024",
+      "author": "TeslaFan2024",
+      "created_utc": 1700004300,
+      "score": 789,
+      "subreddit": "electricvehicles",
+      "num_comments": 201
+    }
+  ]
+}
