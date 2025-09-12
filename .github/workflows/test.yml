@@ -2,7 +2,7 @@ name: ClusterBot Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, test-ci ]
   pull_request:
     branches: [ main ]
   workflow_dispatch:
