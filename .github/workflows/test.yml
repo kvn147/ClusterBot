@@ -2,7 +2,7 @@ name: ClusterBot Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, test-ci ]
   pull_request:
     branches: [ main ]
   workflow_dispatch:
@@ -26,8 +26,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        pip install pytest pytest-cov flake8 black
+        pip install -r server/requirements.txt
 
     - name: Lint with flake8
       run: |
@@ -41,7 +40,12 @@ jobs:
         black --check .
 
     - name: Test with pytest
+      env:
+        REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+        REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+        REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
       run: |
+        cd server
         pytest --cov=app tests/
         
     - name: Upload coverage report

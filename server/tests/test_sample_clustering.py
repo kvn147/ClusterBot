@@ -1,9 +1,14 @@
 import sys
 import os
-sys.path.append('.')
+
+sys.path.append(".")
 
 from app.clustering import PostClusterer
-from tests.sample_data.test_posts import get_earthquake_posts, get_tech_posts, get_unrelated_posts
+from tests.sample_data.test_posts import (
+    get_earthquake_posts,
+    get_tech_posts,
+    get_unrelated_posts,
+)
 
 clusterer = PostClusterer(similarity_threshold=0.7)
 
