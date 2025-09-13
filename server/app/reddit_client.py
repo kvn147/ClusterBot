@@ -12,7 +12,9 @@ class RedditClient:
         self.reddit = praw.Reddit(
             client_id=os.getenv("REDDIT_CLIENT_ID"),
             client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
-            user_agent="ClusterBot/1.0 by /u/yourusername",  # Better user agent
+            user_agent=os.getenv(
+                "REDDIT_USER_AGENT", "ClusterBot/1.0 by /u/yourusername"
+            ),
         )
 
     def get_new_posts(self, subreddit: str, limit: int = 10) -> List[Dict]:
