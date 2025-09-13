@@ -10,7 +10,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
-from datetime import datetime
+from datetime import datetime, timezone
 
 Base = declarative_base()
 
@@ -23,7 +23,7 @@ class Post(Base):
     content = Column(Text)
     url = Column(String)
     author = Column(String)
-    created_at = Column(DateTime, default=datetime.now(datetime.UTC))
+    created_at = Column(DateTime, default=datetime.now(timezone.utc))
     reddit_created_utc = Column(Float)
     score = Column(Integer, default=0)
     subreddit = Column(String, nullable=False)
@@ -41,8 +41,8 @@ class Cluster(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     representative_post_id = Column(String, ForeignKey("posts.id"))
-    created_at = Column(DateTime, default=datetime.now(datetime.UTC))
-    updated_at = Column(DateTime, default=datetime.now(datetime.UTC))
+    created_at = Column(DateTime, default=datetime.now(timezone.utc))
+    updated_at = Column(DateTime, default=datetime.now(timezone.utc))
     post_count = Column(Integer, default=1)
     keywords = Column(Text)  # JSON string of important keywords
     title = Column(String)  # Generated cluster title
